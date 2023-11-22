@@ -1,9 +1,9 @@
 .venv
-
-db.sqlite3
-
 __pycache__
 
 *.log
 *.pot
 *.pyc
+
+.env
+*/media/
