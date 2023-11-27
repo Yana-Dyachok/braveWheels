@@ -11,9 +11,7 @@ def index(request):
     bicycles = Bicycle.objects.all()
     return HttpResponse(bicycles)
 
-
 ####### API
-
 class BicycleAPI(viewsets.ModelViewSet):
     queryset = Bicycle.objects.all()
     serializer_class = BicycleSerializer
