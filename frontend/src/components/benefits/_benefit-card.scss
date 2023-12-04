@@ -1,0 +1,26 @@
+
+// @import '../../scss/_mixins.scss';
+// @import '../../scss/_icons.scss';
+.benefit-card {
+  position: relative;
+  padding-left: 6.5rem;
+
+  &::before {
+    position: absolute;
+    min-width: 5rem;
+    height: 5rem;
+    left: 0;
+    top: calc(50% - 2.5rem);
+    background-color: rgb(var(--c-orange-400));
+  }
+
+  &__name {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    color: rgb(var(--c-gray-500));
+  }
+}

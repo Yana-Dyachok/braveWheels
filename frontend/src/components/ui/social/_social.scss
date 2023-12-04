@@ -1,0 +1,30 @@
+.social {
+  gap: 3rem;
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--fb {
+      background-image: url('../../../assets/icons/icon-facebook.svg');
+    }
+
+    &--instagram {
+      background-image: url('../../../assets/icons/icon-insta.svg');
+    }
+
+    &--google {
+      background-image: url('../../../assets/icons/icon-gmail.svg');
+    }
+
+    &--tg {
+      background-image: url('../../../assets/icons/icon-telegram.svg');
+    }
+
+  }
+
+}

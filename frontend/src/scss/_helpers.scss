@@ -1,0 +1,52 @@
+.flex {
+  display: flex;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: end;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-btw {
+  justify-content: space-between;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block-center {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.grid {
+  display: grid;
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
