@@ -1,0 +1,21 @@
+.bike-builder {
+
+  background-image: radial-gradient(234.6% 38.29% at 52.08% 56.11%, #554D47 0%, #312E2C 100%)
+  ;
+
+  &__title {
+    color: rgb(var(--c-white));
+  }
+
+  &__inner {
+    min-height: 66rem;
+    height: 100%;
+    display: grid;
+    place-items: center right;
+    
+    background-image: url('../../assets/backgrounds/filter_bike.png');
+    background-repeat: no-repeat;
+    background-size: 55rem 65rem;
+    background-position: top left;
+  }
+}

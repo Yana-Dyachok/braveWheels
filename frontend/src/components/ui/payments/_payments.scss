@@ -1,0 +1,30 @@
+.payments {
+  gap: 3rem;
+
+  &__item {
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &--gpay {
+      width: 75px;
+      background-image: url('../../../assets/icons/icon-gpay.svg');
+    }
+
+    &--apay {
+      width: 63px;
+      background-image: url('../../../assets/icons/icon-apay.svg');
+    }
+
+    &--visa {
+      width: 39px;
+      background-image: url('../../../assets/icons/icon-visa.svg');
+    }
+
+    &--mc {
+      width: 47px;
+      background-image: url('../../../assets/icons/icon-mc.svg');
+    }
+  }
+}

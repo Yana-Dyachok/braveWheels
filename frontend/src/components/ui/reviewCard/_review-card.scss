@@ -1,0 +1,102 @@
+.review-card {
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(var(--c-gray-500), 0.5);
+  overflow: hidden;
+  display: flex;
+  max-width: 60rem;
+
+  &__picture {
+    max-width: 20rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 1.5rem;
+  }
+
+  &__name {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    color: rgb(var(--c-gray-500), 1);
+  }
+
+  &__rating {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 1.5rem;
+    &::before, 
+    &::after {
+      content: '';
+      width: 44px;
+      height: 20px;
+      mask-repeat: space;
+      mask-size: 20px;
+      mask-position: center;
+      mask-image: url('../../../assets/icons/icon-star.svg');
+      background-color: rgb(var(--c-gray-500), 1);
+    }
+
+    &[data-stars='1'] {
+      &::before {
+        width: 22px;
+        background-color: rgb(var(--c-orange-400));
+      }
+      &::after {
+        width: 88px;
+      }
+    }
+
+    &[data-stars='2'] {
+
+      &::before {
+        width: 44px;
+        background-color: rgb(var(--c-orange-400));
+      }
+      &::after {
+        width: 66px;
+      }
+
+    }
+
+    &[data-stars='3'] {
+      &::before {
+        width: 66px;
+        background-color: rgb(var(--c-orange-400));
+      }
+      &::after {
+        width: 44px;
+      }
+    }
+
+    &[data-stars='4'] {
+      &::before {
+        width: 88px;
+        background-color: rgb(var(--c-orange-400));
+      }
+      &::after {
+        width: 22px;
+      }
+    }
+
+    &[data-stars='5'] {
+      &::before {
+        width: 110px;
+        background-color: rgb(var(--c-orange-400));
+      }
+      &::after {
+        width: 0;
+      }
+    }
+  }
+}

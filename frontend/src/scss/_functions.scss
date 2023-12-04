@@ -1,0 +1,5 @@
+@function size($max, $min, $wmax: 192, $wmin: 37.5) {
+  $size: calc(#{$min}rem + (#{$max} - #{$min}) * ((100vw - #{$wmin}rem) / (#{$wmax} - #{$wmin})));
+  @return $size;
+
+}
