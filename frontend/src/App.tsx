@@ -7,9 +7,9 @@ import PromoPage from 'pages/promo/promo.page';
 const App = () => {
   return (
    <Routes>
-    <Route path='/bw' element={<HomePage />} />
-    <Route path='/bw/catalog' element={<CatalogPage />} />
-    <Route path='/bw/promo' element={<PromoPage />} />
+    <Route path='/' element={<HomePage />} />
+    <Route path='/catalog' element={<CatalogPage />} />
+    <Route path='/promo' element={<PromoPage />} />
    </Routes>
   );
 }

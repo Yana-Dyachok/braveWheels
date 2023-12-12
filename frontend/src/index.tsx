@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import Header from 'components/header/header';
 import Footer from 'components/footer/footer';
 import {Helmet} from 'react-helmet';
+import Overlay from 'components/ui/overlay/overlay';
 
 
 const root = ReactDOM.createRoot(
@@ -19,6 +20,7 @@ root.render(
         <title>Головна сторінка</title>
       </Helmet>
       <Header />
+      
       <main>
         <App />
       </main>
