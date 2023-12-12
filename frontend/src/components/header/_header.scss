@@ -1,6 +1,7 @@
 
 
 .header {
+  position: relative;
   padding: 6rem 0 2rem;
 
   &__inner {
@@ -13,5 +14,13 @@
     gap: 2.4rem;
   }
 
+  &__search {
+    position: absolute;
+    top: 16rem;
+    width: 100%;
+    max-width: 131rem;
+    translate: calc((100vw - 100%) / 2);
+    
+  }
 }
 
