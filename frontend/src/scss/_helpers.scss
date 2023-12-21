@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .ai-center {
   align-items: center;
 }
@@ -36,6 +40,14 @@
 
 .grid {
   display: grid;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-20 {
+ gap: 2rem;
 }
 
 
