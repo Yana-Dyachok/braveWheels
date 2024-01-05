@@ -48,7 +48,7 @@ const Header = () => {
             </li>
             <li className='nav__item'>
               <a className='nav__link' href='#'>
-                Служба підтримки
+               Підтримка
               </a>
             </li>
           </ul>
@@ -61,8 +61,8 @@ const Header = () => {
           />
           <BtnAction
             classNames='icon icon--cart'
-            title='Корзина товарів'
-            onClick={() => console.log('Корзина')}
+            title='Кошик'
+            onClick={() => console.log('Кошик')}
           />
         </div>
       </div>

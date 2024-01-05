@@ -4,15 +4,15 @@
   padding: 2.5rem 9rem;
   font-size: 2.4rem;
   line-height: 1;
-  background-color: rgb(var(--c-orange-400));
+  background-color: rgb(var(--c-orange));
   color: rgb(var(--c-white));
   border-radius: 1rem;
   transition: var(--anim-all);
   
   @include hover {
     background-color: rgb(var(--c-white));
-    color: rgba(var(--c-orange-400)); 
-    box-shadow: 0 0.4rem 1.1rem 0 rgba(var(--c-orange-400), 0.5);
+    color: rgba(var(--c-orange)); 
+    box-shadow: 0 0.4rem 1.1rem 0 rgba(var(--c-orange), 0.5);
   }
 
 

@@ -2,16 +2,17 @@
 
 .header {
   position: relative;
-  padding: 6rem 0 2rem;
+  padding: 4rem 0 2rem;
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3.75fr 2fr 0.5fr; 
     align-items: center;
-  }
+    padding-left: 2.5rem;
+}
 
   &__actions {
-    gap: 2.4rem;
+    gap: 3rem;
   }
 
   &__search {

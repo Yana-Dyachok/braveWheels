@@ -1,25 +1,17 @@
 $c-white: #ffffff;
-$c-gray-100: #EDEDED;
-$c-gray-200: #ECE7E4;
-$c-gray-500: #A09087;
-$c-gray-550: #877A71;
-$c-gray-600: #6D625A;
-$c-gray-700: #554D47;
-$c-dark: #000000;
-$c-orange-300: #FB8A2E;
-$c-orange-400: #E5711D;
-$c-orange-500: #C55C10;
+$c-gray: #b4aeaa;
+$c-brown-200: #7f6654;
+$c-brown-400: #554d47;
+$c-brown-600: #453e38;
+$c-dark: #1d1b19;
+$c-orange: #ff6f1e;
 
 :root {
   --c-white: 255, 255, 255;
-  --c-gray-200: 236, 231, 228;
-  --c-gray-100: 237, 237, 237;
-  --c-gray-500: 161, 144, 135;
-  --c-gray-550: 136, 123, 114;
-  --c-gray-600: 109, 98, 90;
-  --c-gray-700: 86, 78, 72;
-  --c-dark: 0, 0, 0;
-  --c-orange-300: 251, 138, 45;
-  --c-orange-400: 229, 114, 31;
-  --c-orange-500: 198, 92, 16;
+  --c-gray: 180, 174, 170;
+  --c-brown-200: 127, 102, 84;
+  --c-brown-400: 85, 77, 71;
+  --c-brown-600: 69, 62, 56;
+  --c-dark: 29, 27, 25;
+  --c-orange: 255, 111, 30;
 }

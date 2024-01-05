@@ -4,14 +4,14 @@ html {
 }
 
 body {
-  font-family: var(--f-roboto);
+  font-family: var(--f-open-sans);
   -webkit-font-smoothing: auto;
   -webkit-text-size-adjust: 100%;
   background-color: rgb(var(--c-white));
   line-height: 1.5;
   font-size: 1.6rem;
   font-weight: 400;
-  color: rgb(var(--c-dark));
+  color: rgb(var(--c-brown-600));
 }
 
 .lock {
@@ -33,7 +33,7 @@ body {
 }
 
 .title {
-  font-family: var(--f-kyiv);
+  font-family: var(--f-oswald);
   font-size: 4rem;
   font-weight: 500;
   text-align: center;
@@ -50,7 +50,7 @@ textarea {
   outline: 0.3rem solid transparent;
 
   &:focus {
-    outline-color: rgba(var(--c-orange-400), 0.75);
+    outline-color: rgba(var(--c-orange), 0.75);
   }
 
   @include hover {

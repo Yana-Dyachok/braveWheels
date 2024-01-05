@@ -4,19 +4,19 @@
 
   &__list {
     display: flex;
-    gap: 8rem;
+    gap: 4.1rem;
   }
 
   &__link {
-    font-size: 2.7rem;
-    color: rgb(var(--c-gray-500));
+    font-size: 1.8rem;
+    font-weight: 600;
 
     @include hover {
-      color: rgb(var(--c-orange-400));
+      color: rgb(var(--c-orange));
     }
 
     &.current {
-      color: rgb(var(--c-orange-400));
+      color: rgb(var(--c-orange));
     }
   }
 }

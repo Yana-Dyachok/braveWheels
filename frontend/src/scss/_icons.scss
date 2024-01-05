@@ -9,19 +9,19 @@
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
-    background-color: rgb(var(--c-gray-500));
+    background-color: rgb(var(--c-brown-600));
     transition: var(--anim-all);
   }
 
   @include hover {
     &::before {
-      background-color: rgb(var(--c-orange-400));
+      background-color: rgb(var(--c-orange));
     }
   }
 
   &:active {
     &::before {
-      background-color: rgb(var(--c-gray-700));
+      background-color: rgb(var(--c-gray));
 
     }
   }

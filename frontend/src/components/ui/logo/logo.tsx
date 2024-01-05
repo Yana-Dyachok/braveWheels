@@ -7,8 +7,8 @@ const Logo = () => {
       className='logo-img'
       src={logoImg}
       alt='logo'
-      width='172'
-      height='87'
+      width='220'
+      height='40'
     />
   );
 };
