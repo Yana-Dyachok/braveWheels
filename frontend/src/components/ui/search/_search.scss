@@ -1,14 +1,17 @@
+@import '../../../scss/keyframes';
+
 .search {
 
-  &__form {
-
-  }
-
-  &__label {
-
+  opacity: 0;
+  animation: fadeInUp 0.25s ease-in-out 0.3s both;
+  
+  &__inner {
+    background-color: rgb(var(--c-white));
+    padding: 2rem;
+    box-shadow: 3px 0 20px 0px rgba(var(--c-dark), 0.08);
   }
 
   &__row {
-    
+    margin-bottom: 1rem;
   }
 }

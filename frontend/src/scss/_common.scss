@@ -14,6 +14,10 @@ body {
   color: rgb(var(--c-dark));
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1310px;

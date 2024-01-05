@@ -1,0 +1,29 @@
+.search-history { 
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    overflow-y: auto;
+    max-height: 25rem;
+    padding: 1rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__empty {
+    font-size: 2rem;
+    color: rgb(var(--c-gray-500));
+  }
+
+}

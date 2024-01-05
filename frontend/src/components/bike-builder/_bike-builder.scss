@@ -10,12 +10,19 @@
   &__inner {
     min-height: 66rem;
     height: 100%;
-    display: grid;
-    place-items: center right;
+    display: flex;
     
-    background-image: url('../../assets/backgrounds/filter_bike.png');
-    background-repeat: no-repeat;
-    background-size: 55rem 65rem;
-    background-position: top left;
+    
+    &::before {
+      content: '';
+      display: block;
+      min-height: 66rem;
+      width: 60rem;
+      background-image: url('../../assets/backgrounds/bike_builder.webp');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top left;
+      mix-blend-mode: screen;
+    }
   }
 }
