@@ -1,36 +1,61 @@
 .hero {
-  min-height: 70rem;
-  height: calc(100vh - 16.7rem); // screen height - header height
+  min-height: 85.7rem;
+  height: calc(100vh - 16.7rem);
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 36.7rem;
+    height: 100%;
+    background: rgb(var(--c-orange));
+    z-index: -1;
+  }
+
+  &::before {
+    left: 54.8%;
+  }
+
+  &::after {
+    right: 25.9%;
+  }
 
   &__inner {
     height: 100%;
     display: grid;
     place-items: center left;
-    
+
     background-image: url('../../assets/backgrounds/hero_bike.webp');
     background-repeat: no-repeat;
-    background-size: 75rem;
+    background-size: 86.2rem;
     background-position: center right;
   }
 
   &__content {
-    max-width: 57.5rem;
+    max-width: 55rem;
+    padding: 0 1rem;
+    position: relative;
+    bottom: 14.8rem;
   }
 
   &__slogan {
-    color: rgb(var(--c-orange-500));
-    font-family: var(--f-kyiv);
-    font-weight: 500;
-    font-size: 6rem;
-    margin-bottom: 6rem;
+    font-weight: 400;
+    font-size: 7.4rem;
+    text-align: left;
+    margin-bottom: 2rem;
   }
 
   &__text {
-    font-size: 4rem;
-    margin-bottom: 10rem;
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 8.2rem;
+    line-height: 43.58px;
   }
 
   &__btn {
-    
+    padding: 2.05rem 9.35rem;
+    font-weight: 600;
   }
 }

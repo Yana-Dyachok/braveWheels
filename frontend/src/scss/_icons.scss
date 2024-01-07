@@ -21,8 +21,7 @@
 
   &:active {
     &::before {
-      background-color: rgb(var(--c-gray));
-
+      border-bottom: 0.1rem solid rgb(var(--c-orange));
     }
   }
 
