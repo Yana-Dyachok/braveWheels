@@ -1,5 +1,5 @@
 .payments {
-  gap: 3rem;
+  gap: 2rem;
 
   &__item {
     height: 30px;
@@ -7,23 +7,23 @@
     background-repeat: no-repeat;
     background-position: center;
     
-    &--gpay {
-      width: 75px;
-      background-image: url('../../../assets/icons/icon-gpay.svg');
-    }
-
     &--apay {
       width: 63px;
       background-image: url('../../../assets/icons/icon-apay.svg');
     }
 
+    &--gpay {
+      width: 75px;
+      background-image: url('../../../assets/icons/icon-gpay.svg');
+    }
+
     &--visa {
-      width: 39px;
+      width: 38px;
       background-image: url('../../../assets/icons/icon-visa.svg');
     }
 
     &--mc {
-      width: 47px;
+      width: 48px;
       background-image: url('../../../assets/icons/icon-mc.svg');
     }
   }

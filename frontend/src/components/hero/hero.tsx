@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className='container hero__inner'>
         <div className='hero__content'>
           <h1 className='sr-only'>Магазин велосипедів BraveWeels: підбір та консультація</h1>
-          <p className="hero__slogan title">Розкрий свій шлях.</p>
+          <p className="hero__slogan">Розкрий свій шлях.</p>
           <p className='hero__text'>Підбери велосипед, створенний для твоїх досягнень!</p>
           <PageLink classNames='hero__btn' href='#next'>
             Підібрати

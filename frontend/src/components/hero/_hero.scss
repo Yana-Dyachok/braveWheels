@@ -3,23 +3,16 @@
   height: calc(100vh - 16.7rem);
   position: relative;
 
-  &::before,
+  &::before,// не знаю чи правильно
   &::after {
     content: '';
-    position: absolute;
-    top: 0;
     width: 36.7rem;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left:  calc(55.5% - 1rem);
     background: rgb(var(--c-orange));
     z-index: -1;
-  }
-
-  &::before {
-    left: 54.8%;
-  }
-
-  &::after {
-    right: 25.9%;
   }
 
   &__inner {
@@ -30,20 +23,22 @@
     background-image: url('../../assets/backgrounds/hero_bike.webp');
     background-repeat: no-repeat;
     background-size: 86.2rem;
-    background-position: center right;
+    background-position: center right;//не знаю як змістити по PP
   }
 
-  &__content {
-    max-width: 55rem;
-    padding: 0 1rem;
+  .hero__content {
+    max-width: calc(100vw - 70vw);// не знаю чи правильно
+    padding: 0 1.32rem;
     position: relative;
     bottom: 14.8rem;
+    box-sizing: border-box; 
   }
+  
 
   &__slogan {
+    font-family: var(--f-oswald);
     font-weight: 400;
     font-size: 7.4rem;
-    text-align: left;
     margin-bottom: 2rem;
   }
 
@@ -55,7 +50,7 @@
   }
 
   &__btn {
-    padding: 2.05rem 9.35rem;
+    padding: 2.05rem 9.3rem;
     font-weight: 600;
   }
 }

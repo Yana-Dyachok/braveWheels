@@ -7,20 +7,16 @@
 
   &::before {
     position: absolute;
-    min-width: 5rem;
-    height: 5rem;
+    min-width: 3.2rem;
+    height: 3.4rem;
     left: 0;
     top: calc(50% - 2.5rem);
-    background-color: rgb(var(--c-orange-400));
+    background-color: rgb(var(--c-orange));
   }
 
   &__name {
     font-size: 2.4rem;
+    font-weight: 600;
     margin-bottom: 1rem;
-  }
-
-  &__text {
-    font-size: 1.8rem;
-    color: rgb(var(--c-gray-500));
   }
 }

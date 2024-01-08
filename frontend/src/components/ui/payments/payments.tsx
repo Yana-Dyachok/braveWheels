@@ -10,10 +10,10 @@ const Payments = ({classNames}:PaymentTypes) => {
 
   return (
     <ul className={newClassName}>
-      <li className='payments__item payments__item--gpay'></li>
       <li className='payments__item payments__item--apay'></li>
-      <li className='payments__item payments__item--visa'></li>
+      <li className='payments__item payments__item--gpay'></li>
       <li className='payments__item payments__item--mc'></li>
+      <li className='payments__item payments__item--visa'></li>
     </ul>
   )
 }

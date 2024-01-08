@@ -9,7 +9,7 @@ import Address from 'components/ui/address/address';
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='container'>
+      <div className='footer__container container'>
         <div className='footer__top flex jc-btw'>
           <div className='footer__nav footer-nav flex'>
             <div className='footer-nav__col'>
@@ -67,7 +67,7 @@ const Footer = () => {
                 </li>
                 <li className='footer-nav__item'>
                   <Link className='footer-nav__link' to='/'>
-                    Гарантії
+                    Гарантія
                   </Link>
                 </li>
                 <li className='footer-nav__item'>
@@ -82,10 +82,10 @@ const Footer = () => {
           <Address classNames='footer__address' />
         </div>
         <div className='footer__bottom flex jc-btw'>
-          <Social classNames='footer__social flex'/>
           <Payments classNames='footer__payments flex' />
+          <Social classNames='footer__social flex'/>
         </div>
-        <div className='footer__copy'>&copy; BraveWheels</div>
+        <div className='footer__copy'>&copy;BraveWheel 2024</div>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
 .bike-builder {
 
-  background-image: radial-gradient(234.6% 38.29% at 52.08% 56.11%, #554D47 0%, #312E2C 100%)
+  background-image: radial-gradient(234.6% 38.29% at 52.08% 56.11%, #554d47 0%, #1d1b19 100%)
   ;
 
   &__title {
@@ -17,7 +17,7 @@
       content: '';
       display: block;
       min-height: 66rem;
-      width: 60rem;
+      width: 49rem;
       background-image: url('../../assets/backgrounds/bike_builder.webp');
       background-repeat: no-repeat;
       background-size: contain;

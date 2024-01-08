@@ -86,5 +86,34 @@
     }
   }
 
+  &--road-bike {
+    &::before {
+      mask-image: url('../assets/icons/icon-road-bike.svg');
+      background-color: rgb(var(--c-orange));
+    }
+  }
+
+  &--mountain-bike {
+    &::before {
+      mask-image: url('../assets/icons/icon-mountain-bike.svg');
+      background-color: rgb(var(--c-orange));
+    }
+  }
+
+  &--city-bike {
+    &::before {
+      mask-image: url('../assets/icons/icon-city-bike.svg');
+      background-color: rgb(var(--c-orange));
+    }
+  }
+
+  &--electric-bike {
+    &::before {
+      height: 3rem;
+      mask-image: url('../assets/icons/icon-electric-bike.svg');
+      background-color: rgb(var(--c-orange));
+    }
+  }
+
 }
 

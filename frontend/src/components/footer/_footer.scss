@@ -1,22 +1,21 @@
 .footer {
-  background-color: rgb(var(--c-orange-400));
-  padding: 6rem 0 3rem;
+  background-color: rgb(var(--c-brown-700));
+  padding: 0.9rem 0;
   color: rgb(var(--c-white));
 
-  &__nav {
-    gap: 7.5rem;
+  &__container {
+  padding: 0 0.6rem 0 2.8rem;
   }
 
-  &__address {
-    text-align: center;
+  &__nav {
+    gap: 11.1rem;
   }
 
   &__bottom {
-    padding: 4.5rem 0 2.5rem
+    padding: 4.1rem 0 1rem;
   }
 
   &__copy {
-    font-size: 2.4rem;
-    color: rgb(var(--c-gray-700));
+    font-size: 1.4rem;
   }
 }

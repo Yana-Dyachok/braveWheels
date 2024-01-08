@@ -12,10 +12,10 @@ const Social = ({classNames}:SocialTypes) => {
     <ul className={newClassName}>
       <li className='social__item'>
         <a
-          className='social__link social__link--fb'
+          className='social__link social__link--instagram'
           href='https://fb.com'
-          title='Перейти в фейсбук'
-          aria-label='Фейсбук'
+          title='Перейти в інстаграм'
+          aria-label='Інстаграм'
         ></a>
       </li>
       <li className='social__item'>
@@ -28,10 +28,10 @@ const Social = ({classNames}:SocialTypes) => {
       </li>
       <li className='social__item'>
         <a
-          className='social__link social__link--instagram'
+          className='social__link social__link--fb'
           href='https://fb.com'
-          title='Перейти в інстаграм'
-          aria-label='Інстаграм'
+          title='Перейти в фейсбук'
+          aria-label='Фейсбук'
         ></a>
       </li>
       <li className='social__item'>
