@@ -1,14 +1,24 @@
 .bike-slider {
   position: relative;
-
+  
   .swiper {
-    max-width: calc(100% - 10rem);
+    max-width: calc(100% - 20rem);
+    height: 40rem;
     margin: 0 auto;
   }
-  
+  &__card {
+    max-width: 23.9rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(var(--c-gray));
+  }
+
   &__nav {
+    width: 5.2rem;
+    height: 5.2rem;
     position: absolute;
     top: calc(50% - 2rem);
+    background-color: rgb(var(--c-gray));
+    border-radius: 1rem;
 
     &::before {
       background-color: rgb(var(--c-dark));
@@ -25,7 +35,7 @@
     &.swiper-button-disabled {
       cursor: not-allowed;
       &::before {
-        background-color: rgba(var(--c-gray-500), 0.5);
+        background-color: rgba(var(--c-dark), 0.5);
       }
     }
   }

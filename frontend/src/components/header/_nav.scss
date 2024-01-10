@@ -1,7 +1,6 @@
 @import '../../scss/mixins';
 
 .nav {
-
   &__list {
     display: flex;
     gap: 4.1rem;
@@ -12,12 +11,10 @@
     font-size: 1.8rem;
     font-weight: 600;
 
-    @include hover {
-      color: rgb(var(--c-orange));
-    }
-
     &.current {
       color: rgb(var(--c-orange));
+      border-bottom: 0.1rem solid rgb(var(--c-orange));
     }
   }
+  
 }

@@ -1,31 +1,38 @@
 .reviews-slider {
   position: relative;
+  left: 1.3rem;
+  bottom: 2.1rem;
 
   .swiper {
-    max-width: calc(100% - 10rem);
+    max-width: calc(100% - 12rem);
     margin: 0 auto;
   }
 
   &__nav {
+    width: 5.2rem;
+    height: 5.2rem;
     position: absolute;
-    top: calc(50% - 2rem);
+    top: calc(50% - 2.62rem);
+    background-color: rgb(var(--c-gray));
+    border-radius: 1rem;
 
     &::before {
-      background-color: rgb(var(--c-dark));
+      background-color: rgb(var(--c-white));
     }
     
     &--prev {
-      left: 10px;
+      left: 12px;
+      left: 0;
     }
 
     &--next {
-      right: 10px;
+      right: 5px;
     }
 
     &.swiper-button-disabled {
       cursor: not-allowed;
       &::before {
-        background-color: rgba(var(--c-gray-500), 0.5);
+        background-color: rgba(var(--c-dark), 0.5);
       }
     }
   }

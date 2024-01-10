@@ -39,8 +39,7 @@ body {
   text-align: center;
   margin-bottom: 6rem;
 }
-
-a, 
+ 
 button, 
 input, 
 select, 
@@ -49,12 +48,25 @@ textarea {
   outline-offset: 0.3rem;
   outline: 0.3rem solid transparent;
 
+  // &:focus {
+  //   outline-color: rgba(var(--c-orange), 0.75);
+  // }
+
+  // @include hover {
+  //   outline-color: transparent;
+  // }  
+  
+}
+
+a {
+
   &:focus {
-    outline-color: rgba(var(--c-orange), 0.75);
+    color:  rgb(var(--c-orange));
+    border-bottom: 0.1rem solid rgb(var(--c-orange));
   }
 
   @include hover {
-    outline-color: transparent;
+    color:  rgb(var(--c-orange));
   }  
   
 }

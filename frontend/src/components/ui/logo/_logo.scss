@@ -1,3 +1,8 @@
 .logo {
   display: block;
+  
+  &:focus {
+    border-bottom: none;
+  }
+
 }

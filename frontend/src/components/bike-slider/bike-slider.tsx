@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import BikeCard from 'components/ui/bikeCard/bike-card';
 import BtnAction from 'components/ui/btnAction/btnAction';
@@ -8,7 +8,6 @@ import BtnAction from 'components/ui/btnAction/btnAction';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './_bike-slider.scss';
-
 
 import bikesArray from 'mockAPI/db';
 
@@ -37,43 +36,47 @@ const BikeSlider = () => {
 
   return (
     <div className='bike-slider'>
-    <Swiper 
-    modules={[Navigation]} 
-    navigation={{
-      nextEl: '.bike-slider__nav--next', 
-      prevEl: '.bike-slider__nav--prev'
-    }}
-    spaceBetween={25} 
-    slidesPerView={4}
-    >
-      {bikesArray.map(
-        (bike: {
-          productImageUrl: string;
-          productName: string;
-          productPageUrl: string;
-          productPrice: number;
-        }) => (
-          <SwiperSlide>
-            <BikeCard
-              productImageUrl={bike.productImageUrl}
-              productName={bike.productName}
-              productPageUrl={bike.productPageUrl}
-              productPrice={bike.productPrice}
-            />
-          </SwiperSlide>
-        ),
-      )}
-    </Swiper>
-    <div className="bike-slider__actions">
-      <BtnAction 
-        classNames='bike-slider__nav bike-slider__nav--next icon icon--next'
-
-      />
-      <BtnAction 
-        classNames='bike-slider__nav bike-slider__nav--prev icon icon--prev'
-
-      />
-    </div>
+      <Swiper
+        modules={[Navigation]}
+        navigation={{
+          nextEl: '.bike-slider__nav--next',
+          prevEl: '.bike-slider__nav--prev',
+        }}
+        spaceBetween={25}
+        slidesPerView={4}
+      >
+        {bikesArray.map(
+          (bike: {
+            productImageUrl: string;
+            productName: string;
+            productPageUrl: string;
+            productPrice: number;
+            amount: number;
+            discount: number;
+            humanHeight: number[];
+            wheelLength: number;
+          }) => (
+            <SwiperSlide>
+              <div className='bike-slider__card'>
+              <BikeCard
+                productImageUrl={bike.productImageUrl}
+                productName={bike.productName}
+                productPageUrl={bike.productPageUrl}
+                productPrice={bike.productPrice}
+                amount={bike.amount}
+                discount={bike.discount}
+                humanHeight={bike.humanHeight}
+                wheelLength={bike.wheelLength}
+              />
+              </div>
+            </SwiperSlide>
+          ),
+        )}
+      </Swiper>
+      <div className='bike-slider__actions'>
+        <BtnAction classNames='bike-slider__nav bike-slider__nav--next icon icon--next' />
+        <BtnAction classNames='bike-slider__nav bike-slider__nav--prev icon icon--prev' />
+      </div>
     </div>
   );
 };

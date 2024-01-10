@@ -1,98 +1,98 @@
 .review-card {
   border-radius: 1rem;
-  border: 0.1rem solid rgb(var(--c-gray-500), 0.5);
+  border: 0.1rem solid rgb(var(--c-gray), 0.5);
   overflow: hidden;
   display: flex;
-  max-width: 60rem;
+  max-width: 56rem;
 
   &__picture {
     max-width: 20rem;
+    padding: 2rem 1.9rem;
     flex-grow: 1;
     flex-shrink: 0;
+    border-radius: 1rem;
   }
 
   &__img {
-    width: 20rem;
-    height: 20rem;
+    width: 19.8rem;
+    height: 19.8rem;
     object-fit: cover;
+    border-radius: 1rem;
   }
 
   &__content {
-    padding: 1.5rem;
+    padding: 1.9rem 0 1rem;
   }
 
   &__name {
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
-  }
-
-  &__text {
     font-size: 1.8rem;
-    color: rgb(var(--c-gray-500), 1);
+    font-weight: 600;
+    line-height: 1.36;
+    margin-bottom: 1rem;
   }
 
   &__rating {
     display: flex;
-    gap: 2px;
+    gap: 5px;
     margin-bottom: 1.5rem;
     &::before, 
     &::after {
       content: '';
-      width: 44px;
-      height: 20px;
+      width: 30px;
+      height: 25px;
       mask-repeat: space;
-      mask-size: 20px;
+      mask-size: 28px;
       mask-position: center;
       mask-image: url('../../../assets/icons/icon-star.svg');
-      background-color: rgb(var(--c-gray-500), 1);
+      background-color: rgb(var(--c-gray), 1);
     }
 
     &[data-stars='1'] {
       &::before {
-        width: 22px;
-        background-color: rgb(var(--c-orange-400));
+        width: 33px;
+        background-color: rgb(var(--c-orange));
       }
       &::after {
-        width: 88px;
+        width: 132px;
       }
     }
 
     &[data-stars='2'] {
 
       &::before {
-        width: 44px;
-        background-color: rgb(var(--c-orange-400));
+        width: 66px;
+        background-color: rgb(var(--c-orange));
       }
       &::after {
-        width: 66px;
+        width: 99px;
       }
 
     }
 
     &[data-stars='3'] {
       &::before {
-        width: 66px;
-        background-color: rgb(var(--c-orange-400));
+        width: 99px;
+        background-color: rgb(var(--c-orange));
       }
       &::after {
-        width: 44px;
+        width: 66px;
       }
     }
 
     &[data-stars='4'] {
       &::before {
-        width: 88px;
-        background-color: rgb(var(--c-orange-400));
+        width: 132px;
+        background-color: rgb(var(--c-orange));
       }
       &::after {
-        width: 22px;
+        width: 33px;
       }
     }
 
     &[data-stars='5'] {
       &::before {
-        width: 110px;
-        background-color: rgb(var(--c-orange-400));
+        width: 165px;
+        background-color: rgb(var(--c-orange));
       }
       &::after {
         width: 0;
