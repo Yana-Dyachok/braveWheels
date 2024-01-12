@@ -17,8 +17,8 @@ const Benefits = () => {
             </li>
             <li className="benefits-list__item">
               <div className="benefit-card icon icon--delivery">
-                <p className="benefit-card__name">Відправка в той же день</p>
-                <p className="benefit-card__text">При замовленні до 17:00 відправимо сьогодні.</p>
+                <p className="benefit-card__name">Безкоштовна доставка.</p>
+                <p className="benefit-card__text">Замовлення від 15 000 грн доставляються безкоштовно. </p>
               </div>
             </li>
             <li className="benefits-list__item">
@@ -37,14 +37,14 @@ const Benefits = () => {
             </li>
             <li className="benefits-list__item">
               <div className="benefit-card icon icon--return">
-                <p className="benefit-card__name">Повернення</p>
+                <p className="benefit-card__name">Повернення замовлення.</p>
                 <p className="benefit-card__text">Ви можете повернути ваше замовлення протягом 30 днів.</p>
               </div>
             </li>
             <li className="benefits-list__item">
               <div className="benefit-card icon icon--garancy">
                 <p className="benefit-card__name">Гарантія</p>
-                <p className="benefit-card__text">Отримай рік гарантії на наші велосипеди.</p>
+                <p className="benefit-card__text">Ви отримаєте рік гарантії на наші велосипеди.</p>
               </div>
             </li>
           </ul>

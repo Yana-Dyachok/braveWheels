@@ -39,6 +39,11 @@ body {
   text-align: center;
   margin-bottom: 6rem;
 }
+
+.incorrect {
+  color: $c-orange;
+  border: 0.1rem solid $c-orange;
+}
  
 button, 
 input, 

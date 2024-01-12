@@ -1,8 +1,10 @@
 .bike-slider {
   position: relative;
+  left: 2.35rem;
+  bottom: 2.1rem;
   
   .swiper {
-    max-width: calc(100% - 20rem);
+    max-width: calc(100% - 15rem);
     height: 40rem;
     margin: 0 auto;
   }
@@ -16,27 +18,35 @@
     width: 5.2rem;
     height: 5.2rem;
     position: absolute;
-    top: calc(50% - 2rem);
+    top: calc(50% - 3.5rem);
     background-color: rgb(var(--c-gray));
     border-radius: 1rem;
 
     &::before {
-      background-color: rgb(var(--c-dark));
+      background-color: rgb(var(--c-white));
     }
     
     &--prev {
-      left: 10px;
+      left: -9px;
     }
 
     &--next {
-      right: 10px;
+      right: 14px;
     }
 
     &.swiper-button-disabled {
+      background-color: transparent;
+      border: 0.1rem solid  rgb(var(--c-gray));
       cursor: not-allowed;
       &::before {
-        background-color: rgba(var(--c-dark), 0.5);
+        background-color: rgb(var(--c-brown-300));
       }
     }
+  }
+
+  &__pagination {
+    width: 1.9rem;
+    height: 0.7rem;
+    background-color: rgb(var(--c-gray));
   }
 }

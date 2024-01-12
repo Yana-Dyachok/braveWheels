@@ -30,9 +30,11 @@
     }
 
     &.swiper-button-disabled {
+      background-color: transparent;
+      border: 0.1rem solid  rgb(var(--c-gray));
       cursor: not-allowed;
       &::before {
-        background-color: rgba(var(--c-dark), 0.5);
+        background-color: rgb(var(--c-brown-300));
       }
     }
   }

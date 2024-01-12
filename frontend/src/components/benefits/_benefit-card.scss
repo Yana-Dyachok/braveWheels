@@ -3,20 +3,20 @@
 // @import '../../scss/_icons.scss';
 .benefit-card {
   position: relative;
-  padding-left: 6.5rem;
+  padding-left: 8.2rem;
 
   &::before {
     position: absolute;
     min-width: 3.2rem;
     height: 3.4rem;
     left: 0;
-    top: calc(50% - 2.5rem);
+    top: calc(50% - 3.9rem);
     background-color: rgb(var(--c-orange));
   }
 
   &__name {
     font-size: 2.4rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
   }
 }

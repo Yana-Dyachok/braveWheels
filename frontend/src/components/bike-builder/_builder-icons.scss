@@ -1,0 +1,71 @@
+.builder-icon {
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 1rem;
+    min-width: 6rem;
+    height: 6rem;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: rgb(var(--c-orange));
+    transition: var(--anim-all);
+  }
+
+  &--road-bike {
+    &::before {
+      mask-image: url('../../assets/icons/icon-road-bike.svg');
+    }
+  }
+
+  &--mountain-bike {
+    &::before {
+      mask-image: url('../../assets/icons/icon-mountain-bike.svg');
+    }
+  }
+
+  &--city-bike {
+    &::before {
+      mask-image: url('../../assets/icons/icon-city-bike.svg');
+    }
+  }
+
+  &--electric-bike {
+    &::before {
+      mask-image: url('../../assets/icons/icon-electric-bike.svg');
+    }
+  }
+
+  &--wheel-one {
+    &::before {
+      width: 4.1rem;
+      height: 4.1rem;
+      mask-image: url('../../assets/icons/icon-wheel.svg');
+    }
+  }
+
+  &--wheel-two {
+    &::before {
+      width: 4.8rem;
+      height: 4.8rem;
+      mask-image: url('../../assets/icons/icon-wheel.svg');
+    }
+  }
+
+  &--wheel-three {
+    &::before {
+      width: 5.7rem;
+      height: 5.7rem;
+      mask-image: url('../../assets/icons/icon-wheel.svg');
+    }
+  }
+
+  &--human {
+    &::before {
+      width: 5.5rem;
+      height: 6rem;
+      mask-image: url('../../assets/icons/icon-man-height.svg');
+      background-color: rgb(var(--c-orange));
+    }
+  }
+}

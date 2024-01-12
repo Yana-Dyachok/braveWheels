@@ -1,11 +1,12 @@
 .benefits-list {
-  max-width: 40rem;
+  max-width: 50rem;
+  padding-left: 3rem;
   order: 1;
   
   &__item {
 
     &:not(:last-child) {
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
     }
   }
 

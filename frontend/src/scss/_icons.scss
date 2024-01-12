@@ -13,7 +13,7 @@
     transition: var(--anim-all);
   }
 
-  @include hover {
+  @include hoverFocus {
     &::before {
       background-color: rgb(var(--c-orange));
     }
@@ -29,7 +29,6 @@
     &::before {
       mask-image: url('../assets/icons/icon-search.svg');
     }
-    
   }
 
   &--cart {
@@ -39,12 +38,35 @@
   }
 
   &--prev {
+    @include hoverFocus {
+      & {
+        background-color: rgb(var(--c-orange));
+        border: none;
+      }
+    }
+    @include hoverFocus {
+      &::before {
+        background-color: rgb(var(--c-white));
+      }
+    }
     &::before {
       mask-image: url('../assets/icons/icon-arrow-left.svg');
     }
   }
 
   &--next {
+    @include hoverFocus {
+      & {
+        background-color: rgb(var(--c-orange));
+        border: none;
+      }
+    }
+
+    @include hoverFocus {
+      &::before {
+        background-color: rgb(var(--c-white));
+      }
+    }
     &::before {
       mask-image: url('../assets/icons/icon-arrow-right.svg');
     }
@@ -85,35 +107,4 @@
       mask-image: url('../assets/icons/icon-checkmark.svg');
     }
   }
-
-  &--road-bike {
-    &::before {
-      mask-image: url('../assets/icons/icon-road-bike.svg');
-      background-color: rgb(var(--c-orange));
-    }
-  }
-
-  &--mountain-bike {
-    &::before {
-      mask-image: url('../assets/icons/icon-mountain-bike.svg');
-      background-color: rgb(var(--c-orange));
-    }
-  }
-
-  &--city-bike {
-    &::before {
-      mask-image: url('../assets/icons/icon-city-bike.svg');
-      background-color: rgb(var(--c-orange));
-    }
-  }
-
-  &--electric-bike {
-    &::before {
-      height: 3rem;
-      mask-image: url('../assets/icons/icon-electric-bike.svg');
-      background-color: rgb(var(--c-orange));
-    }
-  }
-
 }
-

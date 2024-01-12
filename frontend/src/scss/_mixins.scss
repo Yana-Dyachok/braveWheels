@@ -29,6 +29,13 @@
     &:hover:not(:focus) {
       @content;
     }
-    
+  }
+}
+
+@mixin hoverFocus() {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
   }
 }

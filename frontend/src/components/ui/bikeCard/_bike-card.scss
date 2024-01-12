@@ -17,24 +17,24 @@
   &__link {
     display: flex;
     flex-direction: column;
-    &:focus {
-      // outline: transparent;
+    // &:focus {
+    //   outline: transparent;
 
-      // #{$this}__picture {
-      //   border-color: rgb(var(--c-orange));
-      // }
-      // #{$this}__img {
-      //   transform: scale(1.05);
-      // }
-    }
-    // @include hover {
     //   #{$this}__picture {
     //     border-color: rgb(var(--c-orange));
     //   }
-    //   #{$this}__title {
-    //     color: rgb(var(--c-orange));
+    //   #{$this}__img {
+    //     transform: scale(1.05);
     //   }
     // }
+    @include hover {
+      #{$this}__title {
+        color: rgb(var(--c-brown-600));
+      }
+      #{$this}__price-before {
+        color: rgb(var(--c-brown-600));
+      }
+    }
   }
   &__content {
     padding: 2.9rem 2rem 1rem;
