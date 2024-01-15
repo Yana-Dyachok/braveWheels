@@ -1,5 +1,5 @@
 .bike-builder {
-  padding-top: 7.92rem;
+  padding: 7.95rem 0 7.8rem;
   background-image: radial-gradient(234.6% 38.29% at 52.08% 56.11%, #554d47 0%, #1d1b19 100%)
   ;
 
@@ -8,7 +8,7 @@
   }
 
   &__inner {
-    min-height: 66rem;
+    min-height: 60rem;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -22,7 +22,7 @@
       background-image: url('../../assets/backgrounds/bike_builder.webp');
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: 0 9rem 5rem;
+      background-position: top;
       mix-blend-mode: screen;
     }
   }

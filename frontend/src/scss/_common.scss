@@ -63,15 +63,15 @@ textarea {
   
 }
 
-a {
+// a {
 
-  &:focus {
-    color:  rgb(var(--c-orange));
-    border-bottom: 0.1rem solid rgb(var(--c-orange));
-  }
+//   &:focus {
+//     color:  rgb(var(--c-orange));
+//     border-bottom: 0.1rem solid rgb(var(--c-orange));
+//   }
 
-  @include hover {
-    color:  rgb(var(--c-orange));
-  }  
+//   @include hover {
+//     color:  rgb(var(--c-orange));
+//   }  
   
-}
+// }

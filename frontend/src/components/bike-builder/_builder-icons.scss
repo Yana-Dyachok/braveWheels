@@ -3,8 +3,8 @@
     content: '';
     display: block;
     margin-right: 1rem;
-    min-width: 6rem;
-    height: 6rem;
+    min-width: 5.2rem;
+    min-height: 5.2rem;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
@@ -38,34 +38,48 @@
 
   &--wheel-one {
     &::before {
-      width: 4.1rem;
-      height: 4.1rem;
       mask-image: url('../../assets/icons/icon-wheel.svg');
+      mask-size: 4.1rem;
+      mask-position: bottom;
+      margin-right: 1.8rem;
     }
   }
 
   &--wheel-two {
     &::before {
-      width: 4.8rem;
-      height: 4.8rem;
       mask-image: url('../../assets/icons/icon-wheel.svg');
+      mask-size: 4.8rem;
+      mask-position: bottom;
+      margin-right: 1.7rem;
     }
   }
 
   &--wheel-three {
     &::before {
-      width: 5.7rem;
-      height: 5.7rem;
       mask-image: url('../../assets/icons/icon-wheel.svg');
+      mask-size: 5.2rem;
+      mask-position: bottom;
+      margin-right: 1.9rem;
     }
   }
 
   &--human {
-    &::before {
-      width: 5.5rem;
+    display: flex;
+    align-items: end;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-left: 2rem;
+      min-width: 6rem;
       height: 6rem;
-      mask-image: url('../../assets/icons/icon-man-height.svg');
+      mask-repeat: no-repeat;
+      mask-size: contain;
       background-color: rgb(var(--c-orange));
+      transition: var(--anim-all);
+    }
+    &::after {
+      mask-image: url('../../assets/icons/icon-man-height.svg');
     }
   }
 }

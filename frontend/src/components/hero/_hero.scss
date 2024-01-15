@@ -3,7 +3,7 @@
   height: calc(100vh - 16.7rem);
   position: relative;
 
-  &::before,// не знаю чи правильно
+  &::before,
   &::after {
     content: '';
     width: 36.7rem;
@@ -23,11 +23,11 @@
     background-image: url('../../assets/backgrounds/hero_bike.webp');
     background-repeat: no-repeat;
     background-size: 86.2rem;
-    background-position: center right;//не знаю як змістити по PP
+    background-position: center right;
   }
 
   .hero__content {
-    max-width: calc(100vw - 70vw);// не знаю чи правильно
+    max-width: calc(100vw - 70vw);
     padding: 0 1.32rem;
     position: relative;
     bottom: 14.8rem;

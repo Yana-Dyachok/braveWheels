@@ -48,7 +48,7 @@ const BikeBuilder = () => {
                         id='bikeType[1]'
                       />
                       <label
-                        className='builder-box__label'
+                        className='builder-box__label bike-type__label'
                         htmlFor='bikeType[1]'
                       >
                         Шосейний
@@ -62,7 +62,7 @@ const BikeBuilder = () => {
                         id='bikeType[2]'
                       />
                       <label
-                        className='builder-box__label'
+                        className='builder-box__label bike-type__label'
                         htmlFor='bikeType[2]'
                       >
                         Гірський
@@ -76,7 +76,7 @@ const BikeBuilder = () => {
                         id='bikeType[3]'
                       />
                       <label
-                        className='builder-box__label'
+                        className='builder-box__label bike-type__label'
                         htmlFor='bikeType[3]'
                       >
                         Міський
@@ -90,7 +90,7 @@ const BikeBuilder = () => {
                         id='bikeType[4]'
                       />
                       <label
-                        className='builder-box__label'
+                        className='builder-box__label bike-type__label'
                         htmlFor='bikeType[4]'
                       >
                         Електро
@@ -147,7 +147,7 @@ const BikeBuilder = () => {
                 </div>
                 <div className='builder-box__height'>
                   <div className='builder-box__block'>
-                    <h3 className='builder-box__title builder-icon builder-icon--human'>Який ваш зріст?</h3>
+                    <h3 className='builder-box__title  builder-icon--human'>Який ваш зріст?</h3>
                     <input
                       className={`builder-box__input-height ${+value< 150||+value > 200||isNaN(+value)? 'incorrect' : ''}`}
                       type='number'
