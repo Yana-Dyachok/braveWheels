@@ -37,7 +37,7 @@
     }
   }
   &__content {
-    padding: 2.9rem 2rem 1rem;
+    padding: 1.35rem 2rem 1rem;
     order: 2;
   }
 
@@ -54,6 +54,7 @@
   }
 
   &__picture {
+    padding-top: 1.5rem;
     order: 1;
     border-radius: 1rem;
     overflow: hidden;

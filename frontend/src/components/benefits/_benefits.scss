@@ -1,4 +1,15 @@
 .benefits {
+  padding: 1.9rem 0 2.4rem;
+
+  &__container {
+    padding: 0rem 0 2rem 2rem;
+  }
+
+  &__title {
+    padding-right: 2rem;
+    margin-bottom: 4.8rem;
+  }
+
   &__inner {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -7,10 +18,9 @@
       content: '';
       background-image: url('../../assets/backgrounds/why_us_bike.webp');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 40rem;
       background-position: center;
       order: 2;
     }
-    
   }
 }

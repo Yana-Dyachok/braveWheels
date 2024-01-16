@@ -5,8 +5,8 @@ import './_benefit-card.scss';
 const Benefits = () => {
   return (
     <section className='section benefits'>
-      <div className='container'>
-        <h2 className='title'>Чому обирають нас?</h2>
+      <div className='benefits__container container'>
+        <h2 className='benefits__title title'>Чому обирають нас?</h2>
         <div className='benefits__inner grid'>
           <ul className="benefits-list">
             <li className="benefits-list__item">
