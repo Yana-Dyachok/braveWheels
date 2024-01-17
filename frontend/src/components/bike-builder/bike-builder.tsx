@@ -8,19 +8,22 @@ const BikeBuilder = () => {
   const [value, setValue] = useState<number | string>(150);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const numericValue: string = e.target.value;
+    let numericValue: string = e.target.value.replace(/[^0-9]/g, ''); 
+    numericValue = numericValue.replace(',', '');
     if (!isNaN(Number(numericValue))) {
       const numericInt: number = parseInt(numericValue, 10);
       setValue(numericInt);
     } else {
-      setValue(''); 
+      setValue('');
     }
   };
 
   const inputBlur = (e: React.FocusEvent<HTMLInputElement>) => {
     const inputValue = e.target.value.trim();
-    if (inputValue === '' || +inputValue < 150|| +inputValue >200) {
-      handleInputChange({ target: { value: '150' } } as ChangeEvent<HTMLInputElement>);
+    if (inputValue === '' || +inputValue < 150 || +inputValue > 200) {
+      handleInputChange({
+        target: { value: '150' },
+      } as ChangeEvent<HTMLInputElement>);
     }
   };
 
@@ -147,9 +150,15 @@ const BikeBuilder = () => {
                 </div>
                 <div className='builder-box__height'>
                   <div className='builder-box__block'>
-                    <h3 className='builder-box__title  builder-icon--human'>Який ваш зріст?</h3>
+                    <h3 className='builder-box__title  builder-icon--human'>
+                      Який ваш зріст?
+                    </h3>
                     <input
-                      className={`builder-box__input-height ${+value< 150||+value > 200||isNaN(+value)? 'incorrect' : ''}`}
+                      className={`builder-box__input-height ${
+                        +value < 150 || +value > 200 || isNaN(+value)
+                          ? 'incorrect'
+                          : ''
+                      }`}
                       type='number'
                       value={value}
                       onChange={handleInputChange}
@@ -169,7 +178,7 @@ const BikeBuilder = () => {
                       max={200}
                       step={1}
                     />
-                     <span className='builder-box__span'>200</span>
+                    <span className='builder-box__span'>200</span>
                   </div>
                 </div>
                 <Button classNames='builder-box__submit block-center'>

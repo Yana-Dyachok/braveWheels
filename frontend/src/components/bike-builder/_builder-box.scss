@@ -52,16 +52,16 @@
 
     &:focus {
       color: rgb(var(--c-orange));
-      box-shadow: 0px 0px 10px 4px rgba(var(--c-orange), 0.5);
-      -webkit-box-shadow: 0px 0px 10px 4px rgba(var(--c-orange), 0.5);
-      -moz-box-shadow: 0px 0px 10px 4px rgba(var(--c-orange), 0.5);
+      box-shadow: 0 0 10px 4px rgba(var(--c-orange), 0.5);
+      -webkit-box-shadow: 0 0 10px 4px rgba(var(--c-orange), 0.5);
+      -moz-box-shadow: 0 0 10px 4px rgba(var(--c-orange), 0.5);
     }
 
     @include hover {
       color: rgb(var(--c-orange));
-      box-shadow: 0px 0px 10px 4px rgba(var(--c-orange), 0.5);
-      -webkit-box-shadow: 0px 0px 10px 4px rgba(var(--c-orange), 0.5);
-      -moz-box-shadow: 0px 0px 10px 4px rgba(var(--c-orange), 0.5);
+      box-shadow: 0 0 10px 4px rgba(var(--c-orange), 0.5);
+      -webkit-box-shadow: 0 0 10px 4px rgba(var(--c-orange), 0.5);
+      -moz-box-shadow: 0 0 10px 4px rgba(var(--c-orange), 0.5);
     }
   }
 

@@ -108,4 +108,19 @@
       mask-image: url('../assets/icons/icon-checkmark.svg');
     }
   }
+
+  &--cart-unselected {
+    &::before {
+      mask-image:  url('../assets/icons/icon-shopping-cart-active.svg');
+      background-color: rgb(var(--c-white));
+    }
+  }
+
+  &--cart-selected {
+    &::before {
+      mask-image:  url('../assets/icons/icon-shopping-cart-inactive.svg');
+      background-color: rgb(var(--c-orange));
+    }
+  }
+
 }

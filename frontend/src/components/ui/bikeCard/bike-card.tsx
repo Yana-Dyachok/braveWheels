@@ -47,7 +47,7 @@ const BikeCard = ({
               </div>
               {amount === 0 ? (
                 <button
-                  className='bike-card__btn bike-card__btn--unselected'
+                  className='bike-card__btn  icon icon--cart-unselected'
                   type='button'
                   // onClick={() => {
                   //     addOrder(bike);
@@ -55,7 +55,7 @@ const BikeCard = ({
                 ></button>
               ) : (
                 <button
-                  className='bike-card__btn bike-card__btn--selected'
+                  className='bike-card__btn bike-card__btn--selected icon icon--cart-selected'
                   type='button'
                   // onClick={handleOpenCart}
                 ></button>

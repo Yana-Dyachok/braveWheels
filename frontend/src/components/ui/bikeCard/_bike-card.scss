@@ -78,18 +78,25 @@
     width: 2.6rem;
     height: 3.6rem;
     margin-top: 0.9rem;
-    background-image: url('../../../assets/icons/icon-shopping-cart-active.svg');
     background-color: rgb(var(--c-orange));
-    background-repeat: no-repeat;
     background-size: 2.2rem;
-    background-position: center;
     border-radius: 1rem;
     cursor: pointer;
 
     &--selected {
-      background-image: url('../../../assets/icons/icon-shopping-cart-inactive.svg');
       background-color: rgb(var(--c-white));
       border: 0.1rem solid rgb(var(--c-orange));
+    }
+
+    @include hoverFocus {
+      & {
+        background-color: rgb(var(--c-white));
+        border: 0.1rem solid rgb(var(--c-orange));
+        box-shadow: 0 0 5px 2px rgba(var(--c-orange), 0.5);
+        -webkit-box-shadow: 0 0 5px 2px rgba(var(--c-orange), 0.5);
+        -moz-box-shadow: 0 0 5px 2px rgba(var(--c-orange), 0.5);
+        transform: scale(1.1);
+      }
     }
   }
 }
