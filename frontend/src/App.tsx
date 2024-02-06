@@ -1,17 +1,20 @@
+import { Router } from "./router";
 
-import { Route, Routes } from 'react-router-dom';
-import HomePage from 'pages/home/home.page';
-import CatalogPage from 'pages/catalog/catalog.page';
-import PromoPage from 'pages/promo/promo.page';
+import { useTheme } from "./hooks";
+
+import { Header } from "./components";
+
+import { ThemeProvider } from "styled-components";
 
 const App = () => {
+  const theme = useTheme();
+
   return (
-   <Routes>
-    <Route path='/' element={<HomePage />} />
-    <Route path='/catalog' element={<CatalogPage />} />
-    <Route path='/promo' element={<PromoPage />} />
-   </Routes>
-  );
+    <ThemeProvider theme={theme}>
+      <Header />
+      <Router />
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
