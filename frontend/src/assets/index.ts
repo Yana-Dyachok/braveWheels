@@ -5,15 +5,15 @@ import homeIcon from "./icons/home.svg";
 import catalogIcon from "./icons/category.svg";
 import actionIcon from "./icons/sell.svg";
 import arrowRight from "./icons/arrow_forward_ios.svg";
-import logo from "./images/logo.svg";
-import bike from "./images/bike.png";
-import halfBike from "./images/half-bike.png";
-import selectionBike from "./images/selection-bike.svg";
 import roadBikeIcon from "./icons/pedal_bike.svg";
 import hillBikeIcon from "./icons/motorcycle.svg";
 import mBikeIcon from "./icons/motorcycle-m.svg";
 import electricBikeIcon from "./icons/electric_bike.svg";
 import userHeightIcon from "./icons/user_height.svg";
+import logo from "./images/logo.svg";
+import bike from "./images/bike.png";
+import halfBike from "./images/half-bike.png";
+import selectionBike from "./images/selection-bike.svg";
 
 export {
   logo,
@@ -32,4 +32,5 @@ export {
   mBikeIcon,
   electricBikeIcon,
   userHeightIcon,
+
 }

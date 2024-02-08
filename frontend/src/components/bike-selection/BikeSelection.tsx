@@ -1,7 +1,10 @@
 import { useState } from "react";
 
+import { useBreakpoint } from "../../hooks";
+
 import { Link } from "react-router-dom";
 
+import { Slider as SliderCarousel } from "../../components";
 import { Container } from "../wrappers/Container";
 import { DefaultButton, H1, H3, Input, P, Button, theme } from "../../theme";
 import { Slider, Stack } from "@mui/material";
@@ -56,6 +59,7 @@ const WHEEL_TYPES = [
 ];
 
 export const BikeSelection = () => {
+  const breakpoint = useBreakpoint();
   const [bikeTypes, setBikeTypes] = useState<string[]>([]);
   const [wheelD, setWheelD] = useState<string[]>([]);
   const [userHeight, setUserHeight] = useState<number>(150);
@@ -80,67 +84,118 @@ export const BikeSelection = () => {
     }
   }
 
+  const BikeTypeItems = BIKE_TYPES.map(item => (
+    <li
+      key={item.name}
+      style={{
+        padding: breakpoint < 700 ? "0 50px" : "0",
+        justifyContent: breakpoint < 700 ? "center" : "left",
+        width: breakpoint < 700 ? "100%" : "",
+      }}
+    >
+      <img src={item.icon} />
+      <DefaultButton
+        style={{
+          backgroundColor: bikeTypes.includes(item.name) ? theme.light.palette.lightBrown : "white",
+          borderColor: bikeTypes.includes(item.name) ? theme.light.palette.lightBrown : "white",
+          color: !bikeTypes.includes(item.name) ? theme.light.palette.lightBrown : "white",
+        }}
+        onClick={() => chooseBikeTypeHandler(item.name)}
+      >
+        {item.name}
+      </DefaultButton>
+    </li>
+  ));
+
+  const WheelItems = WHEEL_TYPES.map(item => (
+    <li
+      key={item.name}
+      style={{
+        padding: breakpoint < 700 ? "0 50px" : "0",
+        justifyContent: breakpoint < 700 ? "center" : "left",
+        width: breakpoint < 700 ? "100%" : "",
+      }}
+    >
+      {item.icon}
+      <DefaultButton
+        style={{
+          backgroundColor: wheelD.includes(item.name) ? theme.light.palette.lightBrown : "white",
+          borderColor: wheelD.includes(item.name) ? theme.light.palette.lightBrown : "white",
+          color: !wheelD.includes(item.name) ? theme.light.palette.lightBrown : "white",
+        }}
+        onClick={() => chooseWheelHandler(item.name)}
+      >
+        {item.name}
+      </DefaultButton>
+    </li>
+  ));
+
   return (
     <Elements.SelectionWrapper>
       <Container>
         <H1>Підбір велосипеда</H1>
         <Elements.SelectionBox>
-          <img src={selectionBike}/>
+          <Elements.SelectionBikeImgBox>
+            <img src={selectionBike}/>
+          </Elements.SelectionBikeImgBox>
 
           <Elements.SelectionForm>
             <Elements.BikeTypesBox>
-              <H3 style={{ width: "200px" }}>Тип велосипеда</H3>
+              <H3>Тип велосипеда</H3>
               <Elements.BikeTypeItems>
-                {BIKE_TYPES.map(item => (
-                  <li key={item.name}>
-                    <img src={item.icon} />
-                    <DefaultButton
-                      style={{
-                        backgroundColor: bikeTypes.includes(item.name) ? theme.light.palette.lightBrown : "white",
-                        borderColor: bikeTypes.includes(item.name) ? theme.light.palette.lightBrown : "white",
-                        color: !bikeTypes.includes(item.name) ? theme.light.palette.lightBrown : "white",
-                      }}
-                      onClick={() => chooseBikeTypeHandler(item.name)}
+                {breakpoint > 600 ? BikeTypeItems :
+                  <div style={{ width: "100%" }}>
+                    <SliderCarousel
+                      cycleNavigation={true}
+                      navButtonsAlwaysVisible={true}
+                      indicators={false}
+                      autoPlay={false}
                     >
-                      {item.name}
-                    </DefaultButton>
-                  </li>
-                ))}
+                      {BikeTypeItems}
+                    </SliderCarousel>
+                  </div>
+                }
               </Elements.BikeTypeItems>
             </Elements.BikeTypesBox>
 
             <Elements.WheelTypesBox>
-              <H3 style={{ width: "160px" }}>Діаметр колес</H3>
+              <H3>Діаметр колес</H3>
               <Elements.WheelTypeItems>
-                {WHEEL_TYPES.map(item => (
-                  <li key={item.name}>
-                    {item.icon}
-                    <DefaultButton
-                      style={{
-                        backgroundColor: wheelD.includes(item.name) ? theme.light.palette.lightBrown : "white",
-                        borderColor: wheelD.includes(item.name) ? theme.light.palette.lightBrown : "white",
-                        color: !wheelD.includes(item.name) ? theme.light.palette.lightBrown : "white",
-                      }}
-                      onClick={() => chooseWheelHandler(item.name)}
+                {breakpoint > 600 ? WheelItems :
+                  <div style={{ width: "100%" }}>
+                    <SliderCarousel
+                      cycleNavigation={true}
+                      navButtonsAlwaysVisible={true}
+                      indicators={false}
+                      autoPlay={false}
                     >
-                      {item.name}
-                    </DefaultButton>
-                  </li>
-                ))}
+                      {WheelItems}
+                    </SliderCarousel>
+                  </div>
+                }
               </Elements.WheelTypeItems>
             </Elements.WheelTypesBox>
 
-            <Elements.UserHeightBox>
-              <div>
+            <Elements.UserHeightBox style={{ marginTop: "30px" }}>
+              <Elements.UserHeightTopBox>
                 <div>
                   <H3>Який ваш зріст?</H3>
-                  <img src={userHeightIcon} />
+                  {breakpoint > theme.light.breakpoints.phone && <img src={userHeightIcon} />}
                 </div>
                 <div>
-                  <Input value={userHeight} />
+                  {breakpoint < theme.light.breakpoints.tablet && <img src={userHeightIcon} />}
+                  <Input
+                    value={userHeight}
+                    onChange={(event) => {
+                      setUserHeight(event.target.value === "" ? 150 : Number(event.target.value));
+                    }}
+                    type="number"
+                    min={150}
+                    max={200}
+                  />
                   <P>см</P>
                 </div>
-              </div>
+              </Elements.UserHeightTopBox>
 
               <Stack spacing={2} direction="row" sx={{ mt: "30px", display: "flex", justifyContent: "center" }} alignItems="center">
                 <P>150</P>
@@ -149,6 +204,7 @@ export const BikeSelection = () => {
                   max={200}
                   aria-label="User height"
                   valueLabelDisplay="auto"
+                  value={userHeight}
                   onChange={(_event: Event, newValue: number | number[]) => setUserHeight(newValue as number)}
                   sx={{
                     width: "500px",
@@ -169,17 +225,20 @@ export const BikeSelection = () => {
                       backgroundColor: theme.light.palette.white,
                       opacity: 1,
                     },
+                    "@media screen and (max-width: 700px)": {
+                      width: "100%",
+                    }
                   }}
                 />
                 <P>200</P>
               </Stack>
             </Elements.UserHeightBox>
 
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <Elements.BottomButtonBox>
               <Link to={`/catalog`}> {/* + filters*/}
                 <Button>Підібрати</Button>
               </Link>
-            </div>
+            </Elements.BottomButtonBox>
           </Elements.SelectionForm>
         </Elements.SelectionBox>
       </Container>
