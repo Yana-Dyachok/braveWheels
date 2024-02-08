@@ -15,8 +15,8 @@ export const Button = styled.button`
   border: 2px solid ${({ theme }) => theme.palette.orange};
   transition: all 0.2s ease-in-out;
   &:hover {
-    // background-color: ${({ theme }) => theme.palette.white};
-    // color: ${({ theme }) => theme.palette.orange};
+    // background-color: {({ theme }) => theme.palette.white};
+    // color: {({ theme }) => theme.palette.orange};
     // box-shadow: 0px 4px 11px 0px rgba(130, 82, 38, 0.52);
     // border: 2px solid transparent;
     opacity: 0.8;

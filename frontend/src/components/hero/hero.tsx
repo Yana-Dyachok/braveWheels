@@ -14,7 +14,7 @@ export const Hero = () => {
     window.scrollTo({
       top: window.scrollY + 900,
       behavior: "smooth",
-    })
+    });
   }
 
   return (
