@@ -14,6 +14,7 @@ import hillBikeIcon from "./icons/motorcycle.svg";
 import mBikeIcon from "./icons/motorcycle-m.svg";
 import electricBikeIcon from "./icons/electric_bike.svg";
 import userHeightIcon from "./icons/user_height.svg";
+import errorBike from "./images/error_bike.webp";
 
 export {
   logo,
@@ -32,4 +33,5 @@ export {
   mBikeIcon,
   electricBikeIcon,
   userHeightIcon,
+  errorBike
 }
