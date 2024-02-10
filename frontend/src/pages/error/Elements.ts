@@ -53,6 +53,7 @@ export const ErrorInfo = styled.div`
         align-items: center;
     }
 `;
+
 export const ErrorPicture = styled.div`
     & img {
         width: 730px;
@@ -69,10 +70,6 @@ export const ErrorPicture = styled.div`
 
     @media screen and (max-width: ${({ theme }) =>
             theme.breakpoints.tablet}px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         & img {
             width: 730px;
             height: 586px;

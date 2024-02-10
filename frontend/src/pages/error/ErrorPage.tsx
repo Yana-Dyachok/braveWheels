@@ -33,7 +33,9 @@ export const ErrorPage = () => {
                             </Link>
                         </div>
                     </Elements.ErrorInfo>
-                        <img src={errorBike} alt="error bike" />
+                    <Elements.ErrorPicture>
+                      <img src={errorBike} alt="error bike" />
+                    </Elements.ErrorPicture>
                 </Elements.ErrorContainer>
             </Container>
         </Elements.ErrorWrapper>
