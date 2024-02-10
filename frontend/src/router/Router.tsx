@@ -1,7 +1,7 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import { CartPage, HomePage} from '../pages';
-import { ErrorPage } from '../pages/error/ErrorPage';
+import { CartPage, HomePage} from "../pages";
+import { ErrorPage } from "../pages";
 
 export const Router = () => {
     return (
@@ -9,7 +9,7 @@ export const Router = () => {
             <Route path="/home" element={<HomePage />} />
             <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/error" element={<ErrorPage />} />
+            <Route path="/*" element={<ErrorPage />} />
         </Routes>
     );
 };

@@ -1,10 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container } from '../../components';
-import { H1, H4, Button } from '../../theme';
-import * as Elements from './Elements';
+import React from "react";
 
-import { errorBike } from '../../assets';
+import { Link } from "react-router-dom";
+
+import { Container } from "../../components";
+import { H1, H4, Button } from "../../theme";
+import * as Elements from "./Elements";
+
+import { errorBike } from "../../assets";
 
 export const ErrorPage = () => {
     return (
@@ -22,11 +24,11 @@ export const ErrorPage = () => {
                         </H4>
                         <div
                             style={{
-                                display: 'flex',
-                                justifyContent: 'center',
+                                display: "flex",
+                                justifyContent: "center",
                             }}
                         >
-                            <Link to="/">
+                            <Link to="/home">
                                 <Button>На головну</Button>
                             </Link>
                         </div>
